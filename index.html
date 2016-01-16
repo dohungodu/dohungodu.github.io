@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <link rel="import" href="http://www.cs.odu.edu/~hdo/index.html">
-</head>
-<body>
+<html> 
+  <head> 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://www.cs.odu.edu/~hdo/index.html"); 
+    });
+    </script> 
+  </head> 
 
-<h1>My First HTML Include</h1>
-
-<div w3-include-HTML="http://www.cs.odu.edu/~hdo/">My HTML include will go here.</div>
-
-</body>
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
 </html>
